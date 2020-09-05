@@ -1,7 +1,7 @@
 const express = require('express')
 var AWSXRay = require('aws-xray-sdk');
 const app = express()
-const port = 3000
+const port = 80
 
 app.use(AWSXRay.express.openSegment('MyApp'));
 
